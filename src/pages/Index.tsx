@@ -18,8 +18,9 @@ const Index = () => {
           </div>
           <nav className="hidden md:flex space-x-6">
             <a href="#services" className="text-gray-600 hover:text-blue-600 transition-colors">Услуги</a>
-            <a href="#advantages" className="text-gray-600 hover:text-blue-600 transition-colors">Преимущества</a>
-            <a href="#faq" className="text-gray-600 hover:text-blue-600 transition-colors">Вопросы</a>
+            <a href="#process" className="text-gray-600 hover:text-blue-600 transition-colors">Этапы работ</a>
+            <a href="#portfolio" className="text-gray-600 hover:text-blue-600 transition-colors">Примеры работ</a>
+            <a href="#reviews" className="text-gray-600 hover:text-blue-600 transition-colors">Отзывы</a>
             <a href="#contact" className="text-gray-600 hover:text-blue-600 transition-colors">Контакты</a>
           </nav>
           <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
@@ -243,6 +244,324 @@ const Index = () => {
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
+          </div>
+        </div>
+      </section>
+
+      {/* Work Process Section */}
+      <section id="process" className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl font-bold text-gray-900 mb-4">Этапы работ</h3>
+            <p className="text-lg text-gray-600">Как мы работаем от заявки до готовой скважины</p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 relative">
+                <Icon name="Phone" className="text-blue-600" size={24} />
+                <div className="absolute -top-2 -right-2 bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">1</div>
+              </div>
+              <h4 className="text-lg font-semibold text-gray-900 mb-2">Заявка</h4>
+              <p className="text-gray-600 text-sm">Вы оставляете заявку на сайте или звоните нам</p>
+            </div>
+            <div className="text-center">
+              <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 relative">
+                <Icon name="MapPin" className="text-green-600" size={24} />
+                <div className="absolute -top-2 -right-2 bg-green-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">2</div>
+              </div>
+              <h4 className="text-lg font-semibold text-gray-900 mb-2">Выезд инженера</h4>
+              <p className="text-gray-600 text-sm">Бесплатный выезд инженера для оценки участка</p>
+            </div>
+            <div className="text-center">
+              <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 relative">
+                <Icon name="Hammer" className="text-purple-600" size={24} />
+                <div className="absolute -top-2 -right-2 bg-purple-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">3</div>
+              </div>
+              <h4 className="text-lg font-semibold text-gray-900 mb-2">Бурение</h4>
+              <p className="text-gray-600 text-sm">Работы по бурению скважины согласно ГОСТ</p>
+            </div>
+            <div className="text-center">
+              <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 relative">
+                <Icon name="CheckCircle" className="text-orange-600" size={24} />
+                <div className="absolute -top-2 -right-2 bg-orange-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">4</div>
+              </div>
+              <h4 className="text-lg font-semibold text-gray-900 mb-2">Сдача объекта</h4>
+              <p className="text-gray-600 text-sm">Обустройство, паспорт скважины, гарантия</p>
+            </div>
+          </div>
+          <div className="mt-12 bg-gray-50 rounded-lg p-8">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <h4 className="text-2xl font-bold text-gray-900 mb-4">Наш процесс работы</h4>
+                <ul className="space-y-3 text-gray-700">
+                  <li className="flex items-start">
+                    <Icon name="CheckCircle" className="text-green-600 mr-3 mt-0.5" size={16} />
+                    <span>Предварительная оценка участка и геологические изыскания</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Icon name="CheckCircle" className="text-green-600 mr-3 mt-0.5" size={16} />
+                    <span>Бурение с использованием качественных обсадных труб ПВХ СЕМКОР</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Icon name="CheckCircle" className="text-green-600 mr-3 mt-0.5" size={16} />
+                    <span>Анализ воды и установка фильтрационного оборудования</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Icon name="CheckCircle" className="text-green-600 mr-3 mt-0.5" size={16} />
+                    <span>Обустройство скважины и подключение к системе водоснабжения</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Icon name="CheckCircle" className="text-green-600 mr-3 mt-0.5" size={16} />
+                    <span>Выдача паспорта скважины и оформление гарантии</span>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <img 
+                  src="/img/8a90d3e5-50a9-4d59-b262-99975a8a4ad7.jpg" 
+                  alt="Процесс бурения скважины"
+                  className="rounded-lg shadow-lg w-full"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Portfolio Section */}
+      <section id="portfolio" className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl font-bold text-gray-900 mb-4">Примеры наших работ</h3>
+            <p className="text-lg text-gray-600">Более 1000 успешно выполненных проектов</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="hover:shadow-lg transition-shadow">
+              <div className="relative">
+                <img 
+                  src="/img/5e41e81c-1797-41fe-a1d0-7c898f14a125.jpg" 
+                  alt="Артезианская скважина"
+                  className="w-full h-48 object-cover rounded-t-lg"
+                />
+                <Badge className="absolute top-2 left-2 bg-blue-600">Артезианская</Badge>
+              </div>
+              <CardContent className="p-6">
+                <h4 className="font-semibold text-lg mb-2">Скважина в Подмосковье</h4>
+                <div className="space-y-2 text-sm text-gray-600">
+                  <p className="flex items-center">
+                    <Icon name="Ruler" className="mr-2" size={14} />
+                    Глубина: 85 метров
+                  </p>
+                  <p className="flex items-center">
+                    <Icon name="Droplets" className="mr-2" size={14} />
+                    Дебет: 3.5 м³/час
+                  </p>
+                  <p className="flex items-center">
+                    <Icon name="Calendar" className="mr-2" size={14} />
+                    Срок: 3 дня
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <div className="relative">
+                <img 
+                  src="/img/c41e2a32-3deb-4b21-9da5-5bda5fa4f185.jpg" 
+                  alt="Скважина на песок"
+                  className="w-full h-48 object-cover rounded-t-lg"
+                />
+                <Badge className="absolute top-2 left-2 bg-green-600">На песок</Badge>
+              </div>
+              <CardContent className="p-6">
+                <h4 className="font-semibold text-lg mb-2">Скважина в Тульской области</h4>
+                <div className="space-y-2 text-sm text-gray-600">
+                  <p className="flex items-center">
+                    <Icon name="Ruler" className="mr-2" size={14} />
+                    Глубина: 25 метров
+                  </p>
+                  <p className="flex items-center">
+                    <Icon name="Droplets" className="mr-2" size={14} />
+                    Дебет: 1.2 м³/час
+                  </p>
+                  <p className="flex items-center">
+                    <Icon name="Calendar" className="mr-2" size={14} />
+                    Срок: 1 день
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <div className="relative">
+                <img 
+                  src="/img/445d7cff-7308-4746-b8ca-2958e05e03b0.jpg" 
+                  alt="Обустройство скважины"
+                  className="w-full h-48 object-cover rounded-t-lg"
+                />
+                <Badge className="absolute top-2 left-2 bg-purple-600">Обустройство</Badge>
+              </div>
+              <CardContent className="p-6">
+                <h4 className="font-semibold text-lg mb-2">Полное обустройство скважины</h4>
+                <div className="space-y-2 text-sm text-gray-600">
+                  <p className="flex items-center">
+                    <Icon name="Ruler" className="mr-2" size={14} />
+                    Глубина: 120 метров
+                  </p>
+                  <p className="flex items-center">
+                    <Icon name="Droplets" className="mr-2" size={14} />
+                    Дебет: 4.8 м³/час
+                  </p>
+                  <p className="flex items-center">
+                    <Icon name="Calendar" className="mr-2" size={14} />
+                    Срок: 4 дня
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+          <div className="text-center mt-8">
+            <Button variant="outline" size="lg">
+              <Icon name="Image" size={20} className="mr-2" />
+              Смотреть все проекты
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Reviews Section */}
+      <section id="reviews" className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl font-bold text-gray-900 mb-4">Отзывы наших клиентов</h3>
+            <p className="text-lg text-gray-600">Что говорят о нас наши клиенты</p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="p-6">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                  <Icon name="User" className="text-blue-600" size={24} />
+                </div>
+                <div className="ml-4">
+                  <h4 className="font-semibold text-gray-900">Александр Петров</h4>
+                  <p className="text-sm text-gray-600">Домовладелец</p>
+                </div>
+              </div>
+              <div className="flex mb-3">
+                {[...Array(5)].map((_, i) => (
+                  <Icon key={i} name="Star" className="text-yellow-400 fill-current" size={16} />
+                ))}
+              </div>
+              <p className="text-gray-700">
+                "Отличная работа! Пробурили артезианскую скважину за 3 дня. Качество воды превосходное, 
+                дебет как и обещали. Все работы выполнены аккуратно, получили паспорт скважины."
+              </p>
+            </Card>
+
+            <Card className="p-6">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                  <Icon name="User" className="text-green-600" size={24} />
+                </div>
+                <div className="ml-4">
+                  <h4 className="font-semibold text-gray-900">Мария Сидорова</h4>
+                  <p className="text-sm text-gray-600">Дачница</p>
+                </div>
+              </div>
+              <div className="flex mb-3">
+                {[...Array(5)].map((_, i) => (
+                  <Icon key={i} name="Star" className="text-yellow-400 fill-current" size={16} />
+                ))}
+              </div>
+              <p className="text-gray-700">
+                "Нужна была скважина на песок для дачи. Ребята приехали день в день, 
+                работали быстро и чисто. Цены адекватные, гарантию дали. Рекомендую!"
+              </p>
+            </Card>
+
+            <Card className="p-6">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
+                  <Icon name="User" className="text-purple-600" size={24} />
+                </div>
+                <div className="ml-4">
+                  <h4 className="font-semibold text-gray-900">Игорь Волков</h4>
+                  <p className="text-sm text-gray-600">Строитель</p>
+                </div>
+              </div>
+              <div className="flex mb-3">
+                {[...Array(5)].map((_, i) => (
+                  <Icon key={i} name="Star" className="text-yellow-400 fill-current" size={16} />
+                ))}
+              </div>
+              <p className="text-gray-700">
+                "Сотрудничаем уже 2 года. Заказывали бурение для нескольких объектов. 
+                Всегда качественно, в срок, с гарантией. Профессиональная команда!"
+              </p>
+            </Card>
+
+            <Card className="p-6">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center">
+                  <Icon name="User" className="text-orange-600" size={24} />
+                </div>
+                <div className="ml-4">
+                  <h4 className="font-semibold text-gray-900">Елена Козлова</h4>
+                  <p className="text-sm text-gray-600">Домовладелец</p>
+                </div>
+              </div>
+              <div className="flex mb-3">
+                {[...Array(5)].map((_, i) => (
+                  <Icon key={i} name="Star" className="text-yellow-400 fill-current" size={16} />
+                ))}
+              </div>
+              <p className="text-gray-700">
+                "Очень довольна работой! Инженер бесплатно приехал, всё объяснил, 
+                дал рекомендации. Скважина работает отлично уже год. Спасибо за качество!"
+              </p>
+            </Card>
+
+            <Card className="p-6">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
+                  <Icon name="User" className="text-red-600" size={24} />
+                </div>
+                <div className="ml-4">
+                  <h4 className="font-semibold text-gray-900">Сергей Михайлов</h4>
+                  <p className="text-sm text-gray-600">Фермер</p>
+                </div>
+              </div>
+              <div className="flex mb-3">
+                {[...Array(5)].map((_, i) => (
+                  <Icon key={i} name="Star" className="text-yellow-400 fill-current" size={16} />
+                ))}
+              </div>
+              <p className="text-gray-700">
+                "Заказывал скважину для полива. Нужен был большой дебет. Команда справилась на отлично - 
+                пробурили глубоко, вода идёт хорошо. Все документы в порядке."
+              </p>
+            </Card>
+
+            <Card className="p-6">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center">
+                  <Icon name="User" className="text-indigo-600" size={24} />
+                </div>
+                <div className="ml-4">
+                  <h4 className="font-semibold text-gray-900">Анна Крылова</h4>
+                  <p className="text-sm text-gray-600">Дизайнер</p>
+                </div>
+              </div>
+              <div className="flex mb-3">
+                {[...Array(5)].map((_, i) => (
+                  <Icon key={i} name="Star" className="text-yellow-400 fill-current" size={16} />
+                ))}
+              </div>
+              <p className="text-gray-700">
+                "Искала надёжную компанию для бурения скважины. Выбрала по отзывам. 
+                Не пожалела - работают профессионально, качественно, с гарантией. Рекомендую!"
+              </p>
+            </Card>
           </div>
         </div>
       </section>
